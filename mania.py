@@ -4,6 +4,12 @@ class Person:
   name = "Loshara"
   is_loh = True
   
-you = Person()
+  def __init__(self, surname):
+    self.surname = surname
+    print(self.name)
+  
+me = Person("loshara")
+you = Person("Lol")
 
-print(you.age)
+print(me.surname)
+print(you.surname)
